@@ -3,5 +3,5 @@
     QR Code Result: {{ qrResultString }}
 </div>
 } @else {
-<zxing-scanner (scanSuccess)="onCodeResult($event)"></zxing-scanner>
+<zxing-scanner [tryHarder]="true" (scanSuccess)="onCodeResult($event)"></zxing-scanner>
 }
