@@ -1,1 +1,7 @@
-<p>reader works!</p>
+<zxing-scanner (scanSuccess)="onCodeResult($event)"></zxing-scanner>
+
+@if (qrResultString) {
+<div>
+    QR Code Result: {{ qrResultString }}
+</div>
+}
